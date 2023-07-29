@@ -5,19 +5,7 @@
 <p>Create a new Nuxt 3 project by running the following command and following the prompts:</p>
 
 ```shell:
-npm create vite@latest [project-name]
-```
-
-<p>Next</p>
-
-```shell:
-select Vue
-```
-
-<p>and finally</p>
-
-```shell:
-select Nuxt
+npx nuxi@latest init <project-name>
 ```
 
 <p>Once the project is created, navigate into the project folder:</p>
@@ -26,7 +14,7 @@ select Nuxt
 cd [project-name]
 ```
 
-<p>Install the required dependencies for the modern Markdown module:</p>
+<p>Install the required dependencies with npm install</p>
 
 ```shell:
 npm install
