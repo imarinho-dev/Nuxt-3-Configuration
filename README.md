@@ -77,20 +77,21 @@ Create a new tailwind.css file in your project's /assets/css/ and add the @tailw
 @tailwind utilities;
 ```
 
-<p>Create a new CSS file in your project's /assets/css folder. For example, you can create a file called main.css.</p>
-
-<p>Add your global CSS styles to the main.css file. This can include styles for elements, classes, Google Fonts, or any other global styles you want to apply throughout your Nuxt application.</p>
-
-```css:
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-```
+<h3>Google Fonts</h3>
 
 <p>Open the nuxt.config.js file in the root of your project directory.</p>
 
-<p>Inside the css array, add the path to your global.css file, relative to the root of your project. For example:</p>
-
 ```javascript:
-css: ['@/assets/css/main.css'],
+app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap",
+        },
+      ],
+    },
+  },
 ```
 
 <h3>TailwindCSS automatic class sorting with Prettier</h3>
